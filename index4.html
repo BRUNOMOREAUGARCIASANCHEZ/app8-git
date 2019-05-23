@@ -27,12 +27,12 @@
 <script type="text/javascript">
 var x=document.getElementById("demo");
 function cargarmap(){
-	navigator.geolocation.getCurrentPosition(showPosition,showError);
+	navigator.geolocation.getCurrentPosition (showPosition,showError);
 	function showPosition(Position)
 	{ 
 	lat=position.coords.latitude;
 	lon=position.coords.longitude;
-		latlon=new google.maps.LatLng("lat,lon")
+		latlon=new google.maps.LatLng(lat,lon)
 		mapholder=document.getElementById('mapholder')
 		mapholder.style.height='500px';
 		mapholder.style.width='750px';
